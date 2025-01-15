@@ -4,7 +4,7 @@ import { Typography, IconButton } from "@material-tailwind/react";
 const year = new Date().getFullYear();
 
 export function Footer({
-  title = "Byte Labs",
+  title = "ByteLabs",
   description = "Build A bright future",
   // socials = [
   //   {
@@ -31,7 +31,7 @@ export function Footer({
   menus = [], // Set to an empty array
   copyright = (
     <>
-      Copyright © {year} <span>Byte Labs</span>.
+      Copyright © {year} <span>ByteLabs</span>.
     </>
   ),
 }) {
@@ -39,7 +39,7 @@ export function Footer({
     <footer className="relative px-4 pt-8 pb-6">
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
-          <div className="w-full px-4 lg:w-6/12">
+        { /* <div className="w-full px-4 lg:w-6/12">
             <Typography variant="h4" className="mb-4" color="blue-gray">
               {title}
             </Typography>
@@ -64,8 +64,8 @@ export function Footer({
                   </IconButton>
                 </a>
               ))}
-            </div> */}
-          </div>
+            </div> */ /*}
+          </div> }
           {/* The menus section will be skipped since `menus` is empty */}
         </div>
         <hr className="my-6 border-gray-300" />

@@ -148,7 +148,7 @@ export function Home() {
                   <img
                     alt="Card Image"
                     src="/img/background-2.jpg"
-                    className="h-fit w-fit"
+                    className="w-fit h-fit object-cover"
                   />
                 </CardHeader>
                 <CardBody>
