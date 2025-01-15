@@ -101,7 +101,7 @@ export function Home() {
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
             <Typography variant="h1" color="white" className="mb-6 font-black flex items-center justify-center">
-            <img src="../../public/img/logo.svg" alt="ByteLabs Logo" className="h-20 w-20 mr-4" />
+            <img src="/img/logo.svg" alt="ByteLabs Logo" className="h-20 w-20 mr-4" />
                  Byte <span className="text-orange-500">Labs</span>
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
