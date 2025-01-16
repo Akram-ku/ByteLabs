@@ -210,7 +210,7 @@ export function Home() {
           className="mx-auto w-full mt-12 lg:w-5/12"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <div className="mb-5 flex gap-8">
+          <div className="mb-5 flex flex-col md:flex-row gap-4">
             <div className="w-full">
               <Input
                 variant="outlined"
@@ -254,19 +254,23 @@ export function Home() {
             )}
           </div>
 
-          <div className="mb-5">
+          <div className="mb-5 pl-3 pr-3">
             <Textarea
-              variant="outlined"
+              variant="standard"
               size="lg"
-              label="Message"
+              // label="Message"
+              placeholder="Message"
               rows={8}
               {...register("message")}
+            
+              
             />
             {errors.message && (
               <Typography color="red" className="mt-1">
                 {errors.message.message}
               </Typography>
             )}
+            
           </div>
 
           <Button type="submit" variant="gradient" size="lg" className="mt-8" fullWidth>
